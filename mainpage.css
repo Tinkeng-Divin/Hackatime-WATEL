@@ -140,7 +140,7 @@ justify-content: center;
     position: relative;
     width: calc(100% - 280px);
     left: 280px;
-    transition: 0.3s ease;
+    transition: 07s ease;
 }
 #sidebar.hide ~#content{
     width: calc(100%-60px);

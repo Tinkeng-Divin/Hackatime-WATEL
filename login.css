@@ -8,7 +8,7 @@
 
 body{
   
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(login.png);
+    background-image: url(login.png);
     background-position: center;
     background-size: cover;
     min-height: 100px;
@@ -20,8 +20,44 @@ body{
     height: 100vh;
 }
 
-.container{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(log.png);
+.intro{
+    padding-bottom: 40px;
+    text-align: center;
+    
+}
+
+.watel-logo{
+    font-size: 75px;
+    font-weight: 900;
+    letter-spacing: 1.1;
+    margin: 0;
+    line-height: 1.1;
+font-family: Arial, sans-serif;
+}
+
+.waste{
+    color: #39D353;
+}
+
+.energy{
+    color: #00bfff;
+
+}
+
+.tagline{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-top: 8px;
+    color: #ffffff;
+}
+
+.tagline span{
+    color: #aab3c5;
+}
+
+
+.container{                                                                                                                                                                                                                                  
     border-radius: 30px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
@@ -50,7 +86,7 @@ margin: 20px 0;
 }
 
 .container  button{
-    background-color: #1770d4;
+    background-color: #88aeb1;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -64,12 +100,13 @@ margin: 20px 0;
 }
 
 .container button.hidden{
-   background-color: transparent;
+   background-color: ;
    border-color: #fff;
+   
 }
 
 .container form{
-   background-color: #2486e2;
+   background-image: linear-gradient(rgba(116, 153, 31, 0.5), rgba(123, 20, 170, 0.5), rgba(180, 22, 114, 0.5)), url(info.png);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,7 +202,7 @@ margin: 20px 0;
 }
 
 .toggle{
-    background: linear-gradient(to left, #0b7a27, #20e00f);
+    background-image: linear-gradient(rgba(24, 209, 70, 0.5), rgba(100, 170, 20, 0.5), rgba(1, 21, 22, 0.5)), url(second.png);
     height: 100%;
     color: #fff;
 position: relative;
