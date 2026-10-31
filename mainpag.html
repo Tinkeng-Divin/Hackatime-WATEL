@@ -1,178 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>WATEL Waste Into Electrical Energy</title>
     <link rel="stylesheet" href="mainpag.css">
-    <!-- Font Waesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <!-- AWesome font -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <!-- Google Font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="stylesheet" href="https://fonts.gstatic.com">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
 </head>
-
 <body>
-    <div class="sidebar">
+    <!-- SIDEBAR -->
+     <div class="sidebar">
         <div class="logo">
             <div class="menu">
-                <li class="active ">
-                    <a href="#">
+                <li class="active">
+                    <a href="#" data-section="dashboard">
                         <i class="fa fa-tachometer-alt"></i>
-                        <span>Dasboard</span>
+                        <span>DashBoard</span>
                     </a>
-                </li>
+                </li>  
+
                 <li>
-                    <a href="#">
+                    <a href="#" data-section="profile">
                         <i class="fa fa-user"></i>
                         <span>Profile</span>
                     </a>
                 </li>
+
                 <li>
-                    <a href="#">
+                    <a href="#" data-section="statistics">
                         <i class="fa fa-chart-bar"></i>
-                        <span>Statistic</span>
+                        <span>Statistics</span>
                     </a>
                 </li>
+
                 <li>
-                    <a href="#">
+                    <a href="#" data-section="bills">
                         <i class="fa fa-receipt"></i>
                         <span>Electric Bills</span>
                     </a>
                 </li>
+
                 <li>
-                    <a href="#">
+                    <a href="#" data-section="faq">
                         <i class="fa fa-question-circle"></i>
                         <span>FAQ</span>
                     </a>
                 </li>
+                
                 <li>
-                    <a href="#">
+                    <a href="#" data-section="feedback">
                         <i class="fa fa-comments"></i>
                         <span>Feedbacks</span>
                     </a>
                 </li>
+
                 <li>
-                    <a href="#">
+                    <a href="#" data-section="settings">
                         <i class="fa fa-cog"></i>
                         <span>Settings</span>
                     </a>
                 </li>
-                <li class="logout">
-                    <a href="#">
+
+                <li>
+                    <a href="#" data-section="signoutbtn">
                         <i class="fa fa-sign-out-alt"></i>
-                        <span>Signout</span>
+                        <span>SignOut</span>
                     </a>
                 </li>
             </div>
         </div>
-    </div>
-    <div class="main--content">
-        <div class="header--wrapper">
+     </div>
+
+     <!-- MAIN CONTENT -->
+      <div class="main--content">
+        <!-- HEADER -->
+         <div class="header--wrapper">
             <div class="header--title">
                 <span>WATEL</span>
                 <h2>Waste Into Electricity</h2>
             </div>
+
             <div class="user--info">
                 <div class="search--box">
-                <i class="fa-solid fa-search"></i>
-                <input type="text" placeholder="Search">
+                    <i class="fa-solid fa-search"></i>
+                        <input type="text" placeholder="Search">
+                    
                 </div>
-                <img src="divin.jpg">
-            </div>
-        </div>
 
-        <div class="card--container">
+                <img src="divin.jpg" alt="User Profile">
+            </div>
+         </div>
+
+         <!-- TODAY'S DATA -->
+          <div class="card--container">
             <h1 class="main--title">Today's Data</h1>
             <div class="card--wrapper">
-                <div class="payment--card light-red">
+                <!-- CARD 1 -->
+                 <div class="payment--card light-red">
                     <div class="card--header">
-                        <div class="amount">
-                            <span class="title"><b>Amount Charged</b>
+                        <div class="amaount">
+                            <span class="title">
+                               Amount Charged
                             </span>
                             <span class="amount--value">5000 FCFA</span>
                         </div>
-                        <i class="fas fa-dollar-sign icon"></i>
+                        <i class="fa fa-dollar-sign icon"></i>
                     </div>
-                    <b><span class="card-detail">Charged: <b>09/05/2019</b> </span></b>
-                    <b><span class="card-detail">Finish: <b>11/06/2019</b> </span></b>
-                </div>
+                    <b class="card-detail">Charged: 09/05/2019</b>
+                    <b class="card-detail">Finish: 11/06/2019</b>
+                 </div>
 
+                <!-- CARD 2 -->
                 <div class="payment--card light-purple">
-                <div class="card--header">
-                    <div class="amount">
-                        <span class="title">
-                        <b>Amount Charged</b>
-                        </span>
-                        <span class="amount--value">7000 FCFA</span>
+                    <div class="card--header">
+                        <div class="amaount">
+                            <span class="title">
+                                Amount Charged
+                            </span>
+                            <span class="amount--value">7000 FCFA</span>
+                        </div>
+                        <i class="fa fa-dollar-sign icon"></i>
                     </div>
-                    <i class="fas fa-dollar-sign icon"></i>
-                </div>
-                <b><span class="card-detail">Charged: <b>12/06/2019</b> </span></b>
-                <b><span class="card-detail">Finish: <b>11/07/2019</b> </span></b>
+                    <b class="card-detail">Charged: 12/06/2019</b>
+                    <b class="card-detail">Finish: 11/07/2019</b>
                 </div>
 
+                <!-- CARD 3 -->
                 <div class="payment--card light-blue">
-                <div class="card--header">
-                    <div class="amount">
-                        <span class="title">
-                            <b>Amount Charged</b>
-                        </span>
-                        <span class="amount--value">2000 FCFA</span>
+                    <div class="card--header">
+                        <div class="amaount">
+                            <span class="title">
+                                Amount Charged
+                            </span>
+                            <span class="amount--value">2000 FCFA</span>
+                        </div>
+                        <i class="fa fa-dollar-sign icon"></i>
                     </div>
-                    <i class="fas fa-solid fa-check icon dark-blue"></i>
-                </div>
-                <b><span class="card-detail">Charged: <b>14/07/2019</b> </span></b>
-                <b><span class="card-detail">Finish: <b>30/07/2019</b> </span></b>
-                
+                    <b class="card-detail">Charged: 14/07/2019</b>
+                    <b class="card-detail">Finish: 30/07/2019</b>
                 </div>
 
+                <!-- CARD 4 -->
                 <div class="payment--card light-green">
                     <div class="card--header">
-                        <div class="amount">
+                        <div class="amaount">
                             <span class="title">
-                                <b>Amount Charged</b>
+                                Amount Charged
                             </span>
-                            <span class="amount--value">6500 FCFA</span>
+                            <span class="amount--value">6000 FCFA</span>
                         </div>
-                        <i class="fas fa-users icon dark-green"></i>
+                        <i class="fa fa-dollar-sign icon"></i>
                     </div>
-                    <b><span class="card-detail">Charge: <b>21/08/2019</b> </span></b>
-                    <b><span class="card-detail">Finish: <b>11/09/2019</b> </span></b>
+                    <b class="card-detail">Charged: 21/08/2019</b>
+                    <b class="card-detail">Finish: 11/09/2019</b>
                 </div>
             </div>
-        </div>
+          </div>
 
+          <!-- FINANCE TABLE -->
+           <div class="tabular--wrapper">
+            <h3 class="main--title">Finace Data</h3>
 
-        <div class="tabular--wrapper">
-            <h3 class="main--title">Finance Data</h3>
             <div class="table-container">
                 <table>
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Transaction Type</th>
-                            <th>Description</th>
+                    <thead><tr>
+                        <th>Date</th>
+                        <th>Transaction</th>
+                        <th>Description</th>
                         <th>Amount</th>
-                        <th>Cathegory</th>
+                        <th>Category</th>
                         <th>Status</th>
                         <th>Action</th>
+                    </tr></thead>
+
+                    <tbody>
+                        <tr>
+                            <td>2023-05-01</td>
+                            <td>Expenses</td>
+                            <td>Office Supplies</td>
+                            <td>2500 FCFA</td>
+                            <td>Office Expenses</td>
+                            <td>Pendng</td>
+                            <td><button class="edit-btn">Edit</button></td>
+                            <td></td>
                         </tr>
-                        <tbody>
-                            <tr>
-                                <td>2023-05-01</td>
-                                <td>Expenses</td>
-                                <td>Office Supplies</td>
-                                <td>2500FCFA</td>
-                                <td>Office Expenses</td>
-                                <td>Pending</td>
-                                <td>Edit</td>
-                            </tr>
-                        </tbody>
-                    </thead>
+                    </tbody>
                 </table>
             </div>
-        </div>
-    </div>
-</body>
+           </div>
+      </div>
 
+      <!-- SLIDING PANEL -->
+       <!-- ?BACKGROUND OVERLAY -->
+
+    <div class="content-drawer" id="contentdrawer"></div>
+    <!-- Sliding Panel -->
+     <div class="drawer-header">
+        <h2 id="drawer-title">My Profile</h2>
+        <button id="closedrawer" arial-label="Close panel">&times;</button>
+     </div>
+
+     <!-- PANEL BODY -->
+      <div class="drawer-body">
+
+        <!-- PROFILE SECTION -->
+         <section class="drawer-section" id="profile">
+           
+                <div class="section-intro">
+                    <i class="fas fa-user-circle"></i>
+                        <h3>Personal Information</h3>
+                        <p>Mnage your personal account information.</p>
+                </div>
+                <div class="profile-avatar"><img src="divin.jpg" alt="Profile Picture"></div>
+                <div class="info-box">
+                    <label>
+                        Full Name
+                    </label>
+                <p>WATEL User</p>
+                </div>
+                <div class="info-box">
+                    <label>Email Address</label>
+                    <p>user@example.com</p>
+                </div>
+                <div class="info-box">
+                    <label for="Phone Number"></label>
+                    <p>+237 680 034 143</p>
+                </div>
+                <div class="info-box">
+                    <label>Account Status</label>
+                    <p><span class="status-action">Active</span></p>
+                </div>
+                <div class="info-box">
+                    <label>Account Type</label>
+                    <p>Customer</p>
+                </div>
+         </section>
+         <!-- STATISTICS SECTION -->
+          <section class="drawer-section" id="statistics">
+            <div class="section-intro">
+                <i class="fas fas-chart-line"></i>
+                <h3>Energy Statistics</h3>
+                <p>Monitor your energy and waste contributions.</p>
+            </div>
+          </section>
+      </div>
+</body>
 </html>
