@@ -305,32 +305,79 @@ thead{
 
 th{
     padding: 15px;
-    text-align: left
-;
+    text-align: left;
+}
+ 
+tbody{
+    background: #f2f2f2;
 }
 
+td{
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
 
+tr:nth-child(even){
+    background: #fff;
+}
 
+.edit-btn{
+    color: green;
+    background: none;
+    cursor: pointer;
+}
 
+/* SLIDING CENTENT PANEL */
+/* Dark background Panel opens */
 
+.drawer-overlay{
+    position: fixed;
+    inset: 0;
+    background: rbga(0, 0, 0, 0.45);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+    z-index: 1000;
+}
 
+.drawer-overlay.is-open{
+    opacity: 1;
+    visibility: visible;
+}
 
+/* Main Sliding panel */
+.content-drawer{
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    width: 430px;
+    max-width: calc(100vw - 40px);
+    height: min(78vh, 760px);
+    min-height: 350px;
+    background: #ffffff;
+    color: #172033;
+    border-radius: 12px;
+    box-shadow: -8px 0 30px rbga(0, 0, 0, 0.3);
+    z-index: 1001;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* Initiallly outside the screen */
+    transform: translate(1110%, -50%);
+    transition: transform 0.34s cubic-bezier(0.22, 1, 0.36, 1);
+}
 
+/* Show the panel */
+.content-drawer.is-open{
+    transform: translate(0, -50%);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* panel HEADER */
+.drawer-header{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
