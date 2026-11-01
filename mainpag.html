@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WATEL Waste Into Electrical Energy</title>
+
+    <title>WATEL | Waste Into Electricity</title>
+
     <link rel="stylesheet" href="mainpag.css">
-    <!-- AWesome font -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     <!-- Google Font -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="stylesheet" href="https://fonts.gstatic.com">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    <!-- SIDEBAR -->
-     <div class="sidebar">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div class="sidebar">
+
         <div class="logo">
             <div class="menu">
+
                 <li class="active">
                     <a href="#" data-section="dashboard">
                         <i class="fa fa-tachometer-alt"></i>
-                        <span>DashBoard</span>
+                        <span>Dashboard</span>
                     </a>
-                </li>  
+                </li>
 
                 <li>
                     <a href="#" data-section="profile">
@@ -34,7 +45,7 @@
                 <li>
                     <a href="#" data-section="statistics">
                         <i class="fa fa-chart-bar"></i>
-                        <span>Statistics</span>
+                        <span>Statistic</span>
                     </a>
                 </li>
 
@@ -51,7 +62,7 @@
                         <span>FAQ</span>
                     </a>
                 </li>
-                
+
                 <li>
                     <a href="#" data-section="feedback">
                         <i class="fa fa-comments"></i>
@@ -66,188 +77,535 @@
                     </a>
                 </li>
 
-                <li>
-                    <a href="#" data-section="signoutbtn">
+                <li class="logout">
+                    <a href="#" id="signoutBtn">
                         <i class="fa fa-sign-out-alt"></i>
-                        <span>SignOut</span>
+                        <span>Signout</span>
                     </a>
                 </li>
+
             </div>
         </div>
-     </div>
 
-     <!-- MAIN CONTENT -->
-      <div class="main--content">
+    </div>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <div class="main--content">
+
         <!-- HEADER -->
-         <div class="header--wrapper">
+
+        <div class="header--wrapper">
+
             <div class="header--title">
                 <span>WATEL</span>
                 <h2>Waste Into Electricity</h2>
             </div>
 
             <div class="user--info">
+
                 <div class="search--box">
                     <i class="fa-solid fa-search"></i>
-                        <input type="text" placeholder="Search">
-                    
+                    <input type="text" placeholder="Search">
                 </div>
 
                 <img src="divin.jpg" alt="User Profile">
-            </div>
-         </div>
 
-         <!-- TODAY'S DATA -->
-          <div class="card--container">
+            </div>
+
+        </div>
+
+
+        <!-- TODAY'S DATA -->
+
+        <div class="card--container">
+
             <h1 class="main--title">Today's Data</h1>
+
             <div class="card--wrapper">
+
                 <!-- CARD 1 -->
-                 <div class="payment--card light-red">
+
+                <div class="payment--card light-red">
+
                     <div class="card--header">
-                        <div class="amaount">
+
+                        <div class="amount">
+
                             <span class="title">
-                               Amount Charged
+                                <b>Amount Charged</b>
                             </span>
-                            <span class="amount--value">5000 FCFA</span>
+
+                            <span class="amount--value">
+                                5000 FCFA
+                            </span>
+
                         </div>
-                        <i class="fa fa-dollar-sign icon"></i>
+
+                        <i class="fas fa-dollar-sign icon"></i>
+
                     </div>
+
                     <b class="card-detail">Charged: 09/05/2019</b>
                     <b class="card-detail">Finish: 11/06/2019</b>
-                 </div>
+
+                </div>
+
 
                 <!-- CARD 2 -->
+
                 <div class="payment--card light-purple">
+
                     <div class="card--header">
-                        <div class="amaount">
+
+                        <div class="amount">
+
                             <span class="title">
-                                Amount Charged
+                                <b>Amount Charged</b>
                             </span>
-                            <span class="amount--value">7000 FCFA</span>
+
+                            <span class="amount--value">
+                                7000 FCFA
+                            </span>
+
                         </div>
-                        <i class="fa fa-dollar-sign icon"></i>
+
+                        <i class="fas fa-dollar-sign icon"></i>
+
                     </div>
+
                     <b class="card-detail">Charged: 12/06/2019</b>
                     <b class="card-detail">Finish: 11/07/2019</b>
+
                 </div>
+
 
                 <!-- CARD 3 -->
+
                 <div class="payment--card light-blue">
+
                     <div class="card--header">
-                        <div class="amaount">
+
+                        <div class="amount">
+
                             <span class="title">
-                                Amount Charged
+                                <b>Amount Charged</b>
                             </span>
-                            <span class="amount--value">2000 FCFA</span>
+
+                            <span class="amount--value">
+                                2000 FCFA
+                            </span>
+
                         </div>
-                        <i class="fa fa-dollar-sign icon"></i>
+
+                        <i class="fas fa-check icon dark-blue"></i>
+
                     </div>
+
                     <b class="card-detail">Charged: 14/07/2019</b>
                     <b class="card-detail">Finish: 30/07/2019</b>
+
                 </div>
+
 
                 <!-- CARD 4 -->
+
                 <div class="payment--card light-green">
+
                     <div class="card--header">
-                        <div class="amaount">
+
+                        <div class="amount">
+
                             <span class="title">
-                                Amount Charged
+                                <b>Amount Charged</b>
                             </span>
-                            <span class="amount--value">6000 FCFA</span>
+
+                            <span class="amount--value">
+                                6500 FCFA
+                            </span>
+
                         </div>
-                        <i class="fa fa-dollar-sign icon"></i>
+
+                        <i class="fas fa-users icon dark-green"></i>
+
                     </div>
+
                     <b class="card-detail">Charged: 21/08/2019</b>
                     <b class="card-detail">Finish: 11/09/2019</b>
-                </div>
-            </div>
-          </div>
 
-          <!-- FINANCE TABLE -->
-           <div class="tabular--wrapper">
-            <h3 class="main--title">Finace Data</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FINANCE TABLE -->
+
+        <div class="tabular--wrapper">
+
+            <h3 class="main--title">Finance Data</h3>
 
             <div class="table-container">
+
                 <table>
-                    <thead><tr>
-                        <th>Date</th>
-                        <th>Transaction</th>
-                        <th>Description</th>
-                        <th>Amount</th>
-                        <th>Category</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                    </tr></thead>
+
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Transaction Type</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
 
                     <tbody>
+
                         <tr>
                             <td>2023-05-01</td>
                             <td>Expenses</td>
                             <td>Office Supplies</td>
                             <td>2500 FCFA</td>
                             <td>Office Expenses</td>
-                            <td>Pendng</td>
-                            <td><button class="edit-btn">Edit</button></td>
-                            <td></td>
+                            <td>Pending</td>
+                            <td>
+                                <button class="edit-btn">Edit</button>
+                            </td>
                         </tr>
+
                     </tbody>
+
                 </table>
+
             </div>
-           </div>
-      </div>
 
-      <!-- SLIDING PANEL -->
-       <!-- ?BACKGROUND OVERLAY -->
+        </div>
 
-    <div class="content-drawer" id="contentdrawer"></div>
-    <!-- Sliding Panel -->
-     <div class="drawer-header">
-        <h2 id="drawer-title">My Profile</h2>
-        <button id="closedrawer" arial-label="Close panel">&times;</button>
-     </div>
 
-     <!-- PANEL BODY -->
-      <div class="drawer-body">
+        <!-- ================= SLIDING PANEL ================= -->
 
-        <!-- PROFILE SECTION -->
-         <section class="drawer-section" id="profile">
-           
-                <div class="section-intro">
-                    <i class="fas fa-user-circle"></i>
+        <!-- Background overlay -->
+
+        <div class="drawer-overlay" id="drawerOverlay"></div>
+
+
+        <!-- Sliding panel -->
+
+        <div class="content-drawer" id="contentDrawer">
+
+            <!-- PANEL HEADER -->
+
+            <div class="drawer-header">
+
+                <h2 id="drawerTitle">My Profile</h2>
+
+                <button id="closeDrawer" aria-label="Close panel">
+                    &times;
+                </button>
+
+            </div>
+
+
+            <!-- PANEL BODY -->
+
+            <div class="drawer-body">
+
+
+                <!-- PROFILE SECTION -->
+
+                <section class="drawer-section" id="profile">
+
+                    <div class="section-intro">
+                        <i class="fas fa-user-circle"></i>
                         <h3>Personal Information</h3>
-                        <p>Mnage your personal account information.</p>
-                </div>
-                <div class="profile-avatar"><img src="divin.jpg" alt="Profile Picture"></div>
-                <div class="info-box">
-                    <label>
-                        Full Name
-                    </label>
-                <p>WATEL User</p>
-                </div>
-                <div class="info-box">
-                    <label>Email Address</label>
-                    <p>user@example.com</p>
-                </div>
-                <div class="info-box">
-                    <label for="Phone Number"></label>
-                    <p>+237 680 034 143</p>
-                </div>
-                <div class="info-box">
-                    <label>Account Status</label>
-                    <p><span class="status-action">Active</span></p>
-                </div>
-                <div class="info-box">
-                    <label>Account Type</label>
-                    <p>Customer</p>
-                </div>
-         </section>
-         <!-- STATISTICS SECTION -->
-          <section class="drawer-section" id="statistics">
-            <div class="section-intro">
-                <i class="fas fas-chart-line"></i>
-                <h3>Energy Statistics</h3>
-                <p>Monitor your energy and waste contributions.</p>
+                        <p>Manage your personal account information.</p>
+                    </div>
+
+                    <div class="profile-avatar">
+                        <img src="divin.jpg" alt="Profile Picture">
+                    </div>
+
+                    <div class="info-box">
+                        <label>Full Name</label>
+                        <p>WATEL User</p>
+                    </div>
+
+                    <div class="info-box">
+                        <label>Email Address</label>
+                        <p>user@example.com</p>
+                    </div>
+
+                    <div class="info-box">
+                        <label>Phone Number</label>
+                        <p>+237 600 000 000</p>
+                    </div>
+
+                    <div class="info-box">
+                        <label>Account Status</label>
+                        <p><span class="status-active">Active</span></p>
+                    </div>
+
+                    <div class="info-box">
+                        <label>Account Type</label>
+                        <p>Customer</p>
+                    </div>
+
+                </section>
+
+
+                <!-- STATISTICS SECTION -->
+
+                <section class="drawer-section" id="statistics">
+
+                    <div class="section-intro">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Energy Statistics</h3>
+                        <p>Monitor your energy and waste contributions.</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <i class="fas fa-bolt"></i>
+                        <div>
+                            <label>Total Energy Generated</label>
+                            <h2>450 kWh</h2>
+                        </div>
+                    </div>
+
+                    <div class="stat-box">
+                        <i class="fas fa-plug"></i>
+                        <div>
+                            <label>Energy Consumed</label>
+                            <h2>320 kWh</h2>
+                        </div>
+                    </div>
+
+                    <div class="stat-box">
+                        <i class="fas fa-battery-three-quarters"></i>
+                        <div>
+                            <label>Remaining Energy</label>
+                            <h2>130 kWh</h2>
+                        </div>
+                    </div>
+
+                    <div class="stat-box">
+                        <i class="fas fa-recycle"></i>
+                        <div>
+                            <label>Waste Contributed</label>
+                            <h2>250 kg</h2>
+                        </div>
+                    </div>
+
+                </section>
+
+
+                <!-- ELECTRIC BILLS SECTION -->
+
+                <section class="drawer-section" id="bills">
+
+                    <div class="section-intro">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        <h3>Electricity Bills</h3>
+                        <p>View your electricity payment information.</p>
+                    </div>
+
+                    <div class="info-box">
+                        <label>Last Payment</label>
+                        <p>5,000 FCFA</p>
+                    </div>
+
+                    <div class="info-box">
+                        <label>Last Payment Date</label>
+                        <p>09/05/2026</p>
+                    </div>
+
+                    <div class="info-box">
+                        <label>Payment Status</label>
+                        <p><span class="status-active">Paid</span></p>
+                    </div>
+
+                    <div class="info-box">
+                        <label>Next Payment</label>
+                        <p>Pending</p>
+                    </div>
+
+                    <h3 class="subheading">Payment History</h3>
+
+                    <div class="bill-item">
+                        <span>Electricity Bill</span>
+                        <strong>5,000 FCFA</strong>
+                        <small>Paid</small>
+                    </div>
+
+                    <div class="bill-item">
+                        <span>Electricity Bill</span>
+                        <strong>7,000 FCFA</strong>
+                        <small>Paid</small>
+                    </div>
+
+                </section>
+
+
+                <!-- FAQ SECTION -->
+
+                <section class="drawer-section" id="faq">
+
+                    <div class="section-intro">
+                        <i class="fas fa-circle-question"></i>
+                        <h3>Frequently Asked Questions</h3>
+                        <p>Find answers to common questions about WATEL.</p>
+                    </div>
+
+                    <details class="faq-item">
+                        <summary>What is WATEL?</summary>
+                        <p>
+                            WATEL stands for Waste to Electrical Energy.
+                            It is a platform designed to support the
+                            transformation of waste into useful electrical energy.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>How can I contribute waste?</summary>
+                        <p>
+                            You can contribute eligible waste through
+                            the WATEL waste collection system.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>How can I check my energy balance?</summary>
+                        <p>
+                            Visit the Statistics section to view your
+                            energy information.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>How can I view my electricity bills?</summary>
+                        <p>
+                            Click Electric Bills on your dashboard
+                            to access your payment information.
+                        </p>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary>How can I contact WATEL?</summary>
+                        <p>
+                            You can contact the WATEL support team
+                            or submit your feedback through the Feedback section.
+                        </p>
+                    </details>
+
+                </section>
+
+
+                <!-- FEEDBACK SECTION -->
+
+                <section class="drawer-section" id="feedback">
+
+                    <div class="section-intro">
+                        <i class="fas fa-comments"></i>
+                        <h3>Customer Feedback</h3>
+                        <p>We value your experience with WATEL.</p>
+                    </div>
+
+                    <form id="feedbackForm">
+
+                        <label for="feedbackName">Your Name</label>
+                        <input type="text" id="feedbackName" placeholder="Enter your name" required>
+
+                        <label for="feedbackEmail">Email Address</label>
+                        <input type="email" id="feedbackEmail" placeholder="Enter your email" required>
+
+                        <label for="feedbackCategory">Feedback Category</label>
+
+                        <select id="feedbackCategory" required>
+                            <option value="">Select a category</option>
+                            <option>Website Experience</option>
+                            <option>Electricity Services</option>
+                            <option>Waste Collection</option>
+                            <option>Technical Problem</option>
+                            <option>Other</option>
+                        </select>
+
+                        <label for="feedbackMessage">Your Message</label>
+
+                        <textarea id="feedbackMessage" placeholder="Write your feedback here..." required></textarea>
+
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Submit Feedback
+                        </button>
+
+                    </form>
+
+                    <p id="feedbackNotice" class="feedback-notice"></p>
+
+                </section>
+
+
+                <!-- SETTINGS SECTION -->
+
+                <section class="drawer-section" id="settings">
+
+                    <div class="section-intro">
+                        <i class="fas fa-cog"></i>
+                        <h3>Account Settings</h3>
+                        <p>Manage your WATEL account preferences.</p>
+                    </div>
+
+                    <div class="info-box">
+                        <label>Account Preferences</label>
+                        <p>Manage your personal information.</p>
+                    </div>
+
+                    <div class="setting-option">
+                        <div>
+                            <strong>Email Notifications</strong>
+                            <p>Receive account updates.</p>
+                        </div>
+                        <input type="checkbox" checked>
+                    </div>
+
+                    <div class="setting-option">
+                        <div>
+                            <strong>Payment Notifications</strong>
+                            <p>Receive payment reminders.</p>
+                        </div>
+                        <input type="checkbox" checked>
+                    </div>
+
+                    <div class="setting-option">
+                        <div>
+                            <strong>Energy Updates</strong>
+                            <p>Receive energy usage updates.</p>
+                        </div>
+                        <input type="checkbox" checked>
+                    </div>
+
+                    <div class="info-box">
+                        <label>Security</label>
+                        <p>Keep your account information secure.</p>
+                    </div>
+
+                </section>
+
+
             </div>
-          </section>
-      </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT FILE -->
+
+    <script src="mainpag.js"></script>
+
 </body>
+
 </html>
